@@ -81,7 +81,9 @@ http://definitelytyped.org/
 
 **Webpack Configuration**
 
-```demo/@static/webpack.config.json```
+```
+demo/@static/webpack.config.json
+```
 
 **Run Webpack**
 
