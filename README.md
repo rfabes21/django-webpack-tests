@@ -28,6 +28,19 @@ pip install -r requirements/base.txt
 ./manage.py runserver 0.0.0.0:80
 ```
 
+**How to use your compiled javascript in Django Templates**
+
+```
+{% load render_bundle from webpack_loader %}
+{% render_bundle 'js/common' %}
+```
+
+You will note the name here, `js/common` lines up with what you see in:
+`@static/webpack.config.js` under the `entry` configuration. 
+
+Speaking of `entry`ies, if you add a new page with custom JS you **MUST**
+add it as an `entry` or you will get nothing.
+
 #### Node
 ```
 cd demo
