@@ -1,0 +1,82 @@
+//
+// Typography
+// ---------------------------
+
+%typography-optimize-readability {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+// -------------------------------- //
+// HEADINGS
+// -------------------------------- //
+
+// note: font-size is already set by conig + bs scaffolding
+
+#{$all-headers} {
+    @extend %typography-optimize-readability;
+}
+
+h1, .h1 {
+    // stub
+}
+
+h2, .h2 {
+    // stub
+}
+
+h3, .h3 {
+    // stub
+}
+
+h4, .h4 {
+    // stub
+}
+
+h5, .h5 {
+    // stub
+}
+
+h6, .h6 {
+    // stub
+}
+
+#{$all-display} {
+    @extend %typography-optimize-readability;
+}
+
+// -------------------------------- //
+// LINKS
+// -------------------------------- //
+
+a {
+    @extend %typography-optimize-readability;
+}
+
+// -------------------------------- //
+// BODY TEXT
+// -------------------------------- //
+
+p {
+    @extend %typography-optimize-readability;
+}
+
+// -------------------------------- //
+// EMPHASIS & MISC
+// -------------------------------- //
+
+em, strong, i {
+    @extend %typography-optimize-readability;
+}
+
+em {
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
+}
+
+sup, sub {
+    // stub
+}

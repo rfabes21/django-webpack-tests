@@ -1,0 +1,28 @@
+// minimum core bootstrap grid mixins
+
+@import "vendor/bootstrap/bootstrap/mixins/clearfix";
+@import "vendor/bootstrap/bootstrap/mixins/grid-framework";
+@import "vendor/bootstrap/bootstrap/mixins/grid";
+@import "vendor/bootstrap/bootstrap/mixins/responsive-visibility";
+
+// minimum bs core mixins
+
+@import "vendor/bootstrap/bootstrap/mixins/vendor-prefixes";
+@import "vendor/bootstrap/bootstrap/mixins/forms";
+@import "vendor/bootstrap/bootstrap/mixins/hide-text";
+@import "vendor/bootstrap/bootstrap/mixins/table-row";
+@import "vendor/bootstrap/bootstrap/mixins/text-emphasis";
+@import "vendor/bootstrap/bootstrap/mixins/background-variant";
+@import "vendor/bootstrap/bootstrap/mixins/text-overflow";
+@import "vendor/bootstrap/bootstrap/mixins/image";
+
+
+// other useful bootstrap mixins
+
+@import "vendor/bootstrap/bootstrap/mixins/border-radius";
+@import "vendor/bootstrap/bootstrap/mixins/center-block";
+@import "vendor/bootstrap/bootstrap/mixins/opacity";
+@import "vendor/bootstrap/bootstrap/mixins/reset-filter";
+@import "vendor/bootstrap/bootstrap/mixins/resize";
+@import "vendor/bootstrap/bootstrap/mixins/responsive-visibility";
+@import "vendor/bootstrap/bootstrap/mixins/tab-focus";

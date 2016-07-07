@@ -1,0 +1,69 @@
+@function get-bootstrap-breakpoints() {
+    @return (
+        xs: $screen-xs,
+        sm: $screen-sm,
+        md: $screen-md,
+        lg: $screen-lg,
+        xs-max: $screen-xs-max,
+        sm-max: $screen-sm-max,
+        md-max: $screen-md-max
+    )
+};
+
+@mixin bootstrap-breakpoint($key) {
+    $breakpoints: get-bootstrap-breakpoints();
+
+    @include breakpoint(map-get($breakpoints, $key)) {
+        @content;
+    }
+}
+
+@mixin bootstrap-breakpoint-max($key) {
+    $breakpoints: get-bootstrap-breakpoints();
+
+    @include breakpoint(max-width map-get($breakpoints, $key)) {
+        @content;
+    }
+}
+
+@mixin bootstrap-xs() {
+    @include bootstrap-breakpoint(xs) {
+        @content;
+    }
+}
+
+@mixin bootstrap-xs-max() {
+    @include bootstrap-breakpoint-max(xs-max) {
+        @content;
+    }
+}
+
+@mixin bootstrap-sm() {
+    @include bootstrap-breakpoint(sm) {
+        @content;
+    }
+}
+
+@mixin bootstrap-sm-max() {
+    @include bootstrap-breakpoint-max(sm-max) {
+        @content;
+    }
+}
+
+@mixin bootstrap-md() {
+    @include bootstrap-breakpoint(md) {
+        @content;
+    }
+}
+
+@mixin bootstrap-md-max() {
+    @include bootstrap-breakpoint-max(md-max) {
+        @content;
+    }
+}
+
+@mixin bootstrap-lg() {
+    @include bootstrap-breakpoint(lg) {
+        @content;
+    }
+}

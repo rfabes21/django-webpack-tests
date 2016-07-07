@@ -1,0 +1,101 @@
+// --------------------------------- //
+// CENTERED BOOTSTRAP COLUMNS
+// see: http://bit.ly/1D3DWJ0
+// --------------------------------- //
+
+.row-col-xs-centered {
+    @include center-row();
+    @include center-column();
+}
+
+@include breakpoint-sm() {
+    .row-col-sm-centered {
+        @include center-row();
+        @include center-column();
+    }
+}
+
+@include breakpoint-sm-max() {
+    .row-col-sm-max-centered {
+        @include center-row();
+        @include center-column();
+    }
+}
+
+@include breakpoint-md() {
+    .row-col-md-centered {
+        @include center-row();
+        @include center-column();
+    }
+}
+
+@include breakpoint-md-max() {
+    .row-col-md-max-centered {
+        @include center-row();
+        @include center-column();
+    }
+}
+
+@include breakpoint-lg() {
+    .row-col-lg-centered {
+        @include center-row();
+        @include center-column();
+    }
+}
+
+// -------------------------------- //
+// POSITIONING
+// -------------------------------- //
+
+%position-relative,
+.position-relative {
+    @include position-relative;
+}
+
+%position-absolute,
+.position-absolute {
+    @include position-absolute;
+}
+
+%position-fixed,
+.position-fixed {
+    @include position-fixed;
+}
+
+// -------------------------------- //
+// CENTERING
+// -------------------------------- //
+
+%absolute-center,
+.absolute-center {
+    @include position(absolute, top 50% left 50%);
+    @include translate3d(-50%, -50%, 0);
+}
+
+// -------------------------------- //
+// MISC
+// -------------------------------- //
+
+%spread,
+.spread {
+    @include position(absolute, top 0 left 0 right 0 bottom 0);
+    @include size(100%);
+}
+
+%clearfix,
+.clearfix {
+    @include clearfix;
+}
+
+%no-scroll,
+.no-scroll {
+    @extend %position-fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+%fluid-image,
+.fluid-image {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block header %}
+{% render_bundle 'js/home' %}
+{% include "partials/header.html" %}
+{% endblock %}
+
+{% block content %}
+  <!-- put content here -->
+{% endblock %}
+
+{% block footer %}
+{% include "partials/footer.html" %}
+{% endblock %}
+
+
