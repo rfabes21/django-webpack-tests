@@ -52,7 +52,7 @@ This is the package it's using:
 https://github.com/owais/django-webpack-loader
 
 You will note the name here, `js/common` lines up with what you see in:
-`@static/webpack.config.js` under the `entry` configuration. 
+`demo/@static/webpack.config.js` under the `entry` configuration. 
 
 Speaking of `entry`ies, if you add a new page with custom JS you **MUST**
 add it as an `entry` or you will get nothing.
@@ -79,6 +79,9 @@ https://github.com/DefinitelyTyped/DefinitelyTyped
 http://definitelytyped.org/
 
 
+**Webpack Configuration**
+
+```demo/@static/webpack.config.json```
 
 **Run Webpack**
 
