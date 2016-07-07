@@ -35,6 +35,10 @@ pip install -r requirements/base.txt
 {% render_bundle 'js/common' %}
 ```
 
+This is the package it's using:
+
+https://github.com/owais/django-webpack-loader
+
 You will note the name here, `js/common` lines up with what you see in:
 `@static/webpack.config.js` under the `entry` configuration. 
 
