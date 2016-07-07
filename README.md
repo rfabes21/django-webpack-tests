@@ -11,6 +11,16 @@ You will note in docker compose there are 2 characters at play:
 You need to be in the node container to run the webpack builds.
 You need to be in the python container to run the python app.
 
+**Start Everything Up**
+
+```
+docker-compose up -d
+```
+
+This is currently set to take advantage of the native volume mapping in Docker
+for Mac beta. If you are not running Docker for Mac Beta you will have issues
+and need to do the volume sharing another way.
+
 #### Python
 ```
 pip install -r requirements/base.txt
