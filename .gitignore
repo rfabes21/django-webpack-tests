@@ -1,3 +1,4 @@
 node_modules
 webpack-stats.json
 __pycache__
+*.map
