@@ -21,6 +21,13 @@ This is currently set to take advantage of the native volume mapping in Docker
 for Mac beta. If you are not running Docker for Mac Beta you will have issues
 and need to do the volume sharing another way.
 
+**Sublime Plugin For TypeScript**
+
+Available in the package manager:
+
+https://github.com/Microsoft/TypeScript-Sublime-Plugin
+
+
 #### Python
 ```
 pip install -r requirements/base.txt
