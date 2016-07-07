@@ -79,3 +79,5 @@ http://definitelytyped.org/
 ```
 ./node_modules/.bin/webpack-dev-server --port 3000 --content-base ./
 ```
+
+You do **NOT** need to run the dev server. It's mentioned here for potential use later.
