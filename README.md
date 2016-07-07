@@ -35,6 +35,11 @@ pip install -r requirements/base.txt
 ./manage.py runserver 0.0.0.0:80
 ```
 
+**Settings**
+
+`config/settings/[base|local|prod].py`
+
+
 **How to use your compiled javascript in Django Templates**
 
 ```
