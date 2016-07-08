@@ -3,8 +3,6 @@ import { sayHello } from '../@modules/utils';
 
 
 describe("my Suite", () => {
-
-
     it("runs", (done) => {
         console.log(sayHello("world"))
         console.log("GOT HERE");
