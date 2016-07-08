@@ -1,0 +1,56 @@
+version: "2"
+services:
+  node:
+    image: blitzagency/node-web
+    working_dir: /unison
+    links:
+      - django:app
+    volumes_from:
+      - unison
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    command: "/bin/bash"
+
+  django:
+    image: blitzagency/python-web:3
+    ports:
+      - "80:80"
+    volumes_from:
+      - unison
+    stdin_open: true
+    working_dir: /unison
+    tty: true
+    command: "/bin/bash"
+    links:
+      - postgres:postgres
+      - unison:unison
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings.base
+      DJANGO_DEBUG: "true"
+    logging:
+      driver: none
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    volumes:
+      - /usr/lib/postgresql
+    environment:
+     POSTGRES_USER: vagrant
+     POSTGRES_PASSWORD: vagrant
+    logging:
+      driver: none
+
+  unison:
+    image: blitzagency/unison:latest
+    command: /etc/service/unison/run
+    volumes:
+      - /unison
+    environment:
+      UNISON_VERSION: "2.48.3"
+      UNISON_DIR: "/unison"
+    ports:
+      - "5000:5000"
+
