@@ -10,7 +10,7 @@ module.exports = {
 
     // http://webpack.github.io/docs/configuration.html#entry
     entry: {
-        "js/common": ["jquery", "underscore", "backbone", "backbone.marionette", "backbone.radio", "bluebird", "common/index.js"],
+        "js/common": "common/index.js",
         "js/home": "home/index.js"
     },
 

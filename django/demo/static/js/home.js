@@ -17,8 +17,7 @@ webpackJsonp([1],{
 	    var view = new Marionette.View();
 	    function foo() {
 	        return new Promise(function (resolve) {
-	            debugger;
-	            resolve("foo");
+	            resolve(true);
 	        });
 	    }
 	    exports.foo = foo;
@@ -27,8 +26,8 @@ webpackJsonp([1],{
 	    function baz() {
 	    }
 	    foo()
-	        .then(function (value) {
-	        console.log(value);
+	        .then(function (data) {
+	        console.log(data);
 	    });
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 

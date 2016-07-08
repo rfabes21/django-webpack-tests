@@ -1,14 +1,14 @@
 import * as Marionette from 'backbone.marionette';
 import * as Promise from 'bluebird';
+import sayHello = Utils.sayHello;
 
 var name = "home";
 var view = new Marionette.View();
 
 
-export function foo(): Promise<string> {
-    return new Promise<string>(resolve => {
-        debugger;
-        resolve("foo");
+export function foo(): Promise<boolean> {
+    return new Promise<boolean>(resolve => {
+        resolve(true);
     })
 }
 
@@ -21,6 +21,6 @@ function baz(){
 }
 
 foo()
-.then( value => {
-    console.log(value);
+.then(data => {
+    console.log(data);
 })
