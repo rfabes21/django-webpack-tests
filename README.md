@@ -47,6 +47,7 @@ pip install -r requirements/base.txt
 ./manage.py runserver 0.0.0.0:80
 ```
 > pdbpp install may fail, if so just run `pip install...` again
+
 > You can install pdbpp with easy install `easy_install pdbpp`
 
 **Settings**
@@ -66,7 +67,7 @@ This is the package it's using:
 https://github.com/owais/django-webpack-loader
 
 You will note the name here, `js/common` lines up with what you see in:
-`demo/@static/webpack.config.js` under the `entry` configuration. 
+`demo/@static/webpack.config.js` under the `entry` configuration.
 
 Speaking of `entry`ies, if you add a new page with custom JS you **MUST**
 add it as an `entry` or you will get nothing.
