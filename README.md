@@ -113,3 +113,17 @@ demo/@static/webpack.config.json
 ```
 
 You do **NOT** need to run the dev server. It's mentioned here for potential use later.
+
+
+**Run Unit Tests**
+
+```
+npm test
+```
+
+`See package.json -> scripts -> test` 
+For how this is done.
+
+Unit tests can also be written in TypeScript
+
+The output will tell you to open your browser to `localhost:3000` to connect to the test runner.
