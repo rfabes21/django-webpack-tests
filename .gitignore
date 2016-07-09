@@ -4,3 +4,5 @@ __pycache__
 *.map
 demo/static
 karma-*/
+django/demo/static
+
