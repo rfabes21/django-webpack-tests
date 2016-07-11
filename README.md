@@ -108,11 +108,11 @@ demo/@static/webpack.config.json
 
 
 **Run Webpack DevServer**
+You do **NOT** need to run the dev server. It's mentioned here for potential use later.
 ```
 ./node_modules/.bin/webpack-dev-server --port 3000 --content-base ./
 ```
 
-You do **NOT** need to run the dev server. It's mentioned here for potential use later.
 
 
 **Run Unit Tests**
@@ -121,7 +121,7 @@ You do **NOT** need to run the dev server. It's mentioned here for potential use
 npm test
 ```
 
-`See package.json -> scripts -> test` 
+`See package.json -> scripts -> test`
 For how this is done.
 
 Unit tests can also be written in TypeScript
